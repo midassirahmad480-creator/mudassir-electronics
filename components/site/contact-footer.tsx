@@ -2,14 +2,14 @@
 
 import { Clock, MapPin, MessageCircle, Phone, PhoneCall, Zap } from 'lucide-react'
 import { useLanguage } from '@/components/language-provider'
-import { PHONE_DISPLAY, PHONE_TEL, WHATSAPP_URL } from '@/lib/translations'
+import { getWhatsAppUrl, PHONE_DISPLAY, PHONE_TEL } from '@/lib/translations'
 
 const MAPS_URL = 'https://www.google.com/maps/search/?api=1&query=Airport+Road+Kashrote+Gilgit+Pakistan'
 const socials = [
   { label: 'Facebook', href: 'https://facebook.com' },
   { label: 'Instagram', href: 'https://instagram.com' },
   { label: 'YouTube', href: 'https://youtube.com' },
-  { label: 'WhatsApp', href: WHATSAPP_URL },
+  { label: 'WhatsApp', href: getWhatsAppUrl() },
 ]
 
 export function ContactFooter() {
@@ -45,7 +45,7 @@ export function ContactFooter() {
                   {t.contact.call}
                 </a>
                 <a
-                  href={WHATSAPP_URL}
+                  href={getWhatsAppUrl()}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 rounded-lg border border-accent/50 bg-accent/10 px-6 py-3.5 font-semibold text-accent transition-transform hover:-translate-y-0.5"

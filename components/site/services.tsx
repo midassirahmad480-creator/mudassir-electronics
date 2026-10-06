@@ -21,7 +21,7 @@ import {
   Zap,
 } from 'lucide-react'
 import { useLanguage } from '@/components/language-provider'
-import { WHATSAPP_URL } from '@/lib/translations'
+import { getWhatsAppUrl } from '@/lib/translations'
 import { SectionHeading } from './section-heading'
 
 const icons = [Lightbulb, BatteryCharging, WashingMachine, Fan, Microwave, Heater, Droplets, Zap, Tv, Cpu]
@@ -30,9 +30,7 @@ export function Services() {
   const { t } = useLanguage()
   const [selectedService, setSelectedService] = useState<(typeof t.services.items)[number] | null>(null)
 
-  const whatsappHref = selectedService
-    ? `${WHATSAPP_URL}${encodeURIComponent(` — ${selectedService.title}`)}`
-    : WHATSAPP_URL
+  const whatsappHref = selectedService ? getWhatsAppUrl(selectedService.title) : getWhatsAppUrl()
 
   return (
     <section id="services" aria-labelledby="services-title" className="scroll-mt-24 px-4 py-20 md:px-6">
