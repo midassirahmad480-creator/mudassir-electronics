@@ -46,6 +46,15 @@ const en = {
     subtitle:
       'From a single LED bulb to a smart TV motherboard — one trusted shop for every appliance in your home.',
     book: 'Book this repair',
+    bookingLabel: 'Booking details',
+    bookingMessage: 'Your selected service is ready to book. Contact us to confirm the issue and get the final estimate.',
+    serviceType: 'Service type',
+    estimatedTime: 'Estimated repair time',
+    timeValue: 'Usually 1–3 hours after diagnosis',
+    shopAddress: 'Shop address',
+    contactInfo: 'Call / WhatsApp',
+    phoneValue: PHONE_DISPLAY,
+    confirmBooking: 'Confirm booking on WhatsApp',
     items: [
       { title: 'DC & Emergency Lighting', desc: 'LED Lamps, Bulbs, Solar Lights' },
       { title: 'Power Banks & Portable Power', desc: 'Power Banks & Battery Packs' },
@@ -180,6 +189,15 @@ const ur: Dictionary = {
     subtitle:
       'Aik LED bulb se le kar Smart TV motherboard tak — ghar ke har appliance ke liye aik bharosemand dukan.',
     book: 'Yeh repair book karein',
+    bookingLabel: 'Booking ki tafseel',
+    bookingMessage: 'Aap ki select ki hui service book hone ke liye tayyar hai. Masla confirm karne aur final estimate lene ke liye hum se rabta karein.',
+    serviceType: 'Service ki qisam',
+    estimatedTime: 'Andazay ka repair time',
+    timeValue: 'Checking ke baad aam tor par 1–3 ghante',
+    shopAddress: 'Dukan ka pata',
+    contactInfo: 'Call / WhatsApp',
+    phoneValue: PHONE_DISPLAY,
+    confirmBooking: 'WhatsApp par booking confirm karein',
     items: [
       { title: 'DC & Emergency Lighting', desc: 'LED Lamps, Bulbs aur Solar Lights repair' },
       { title: 'Power Banks & Portable Power', desc: 'Power Bank aur battery charging repair' },
