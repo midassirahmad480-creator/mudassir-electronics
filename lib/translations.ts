@@ -1,9 +1,9 @@
 export type Lang = 'en' | 'ur'
 
-export const PHONE_DISPLAY = '03151004567'
-export const PHONE_TEL = 'tel:+923151004567'
+export const PHONE_DISPLAY = '03469559167'
+export const PHONE_TEL = 'tel:+923469559167'
 export const WHATSAPP_URL =
-  'https://wa.me/923151004567?text=' +
+  'https://wa.me/923469559167?text='
   encodeURIComponent(
     'Assalam o Alaikum! I want to book a repair service. / Mujhe repairing service book karni hai.',
   )
