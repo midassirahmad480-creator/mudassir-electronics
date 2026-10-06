@@ -9,7 +9,7 @@ const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-space
 export const metadata: Metadata = {
   title: 'Mudassir Electronics Repairing Shop | 24/7 Repair in Gilgit',
   description:
-    '24/7 professional home appliances & electronics repairing in Gilgit. Shop visit, doorstep home service, or live video call guidance. Airport Road, Kashrote. Call 03151004567.',
+    '24/7 professional home appliances & electronics repairing in Gilgit. Shop visit, doorstep home service, or live video call guidance. Airport Road, Kashrote. Call 03469559167.',
   generator: 'v0.app',
   keywords: [
     'electronics repair Gilgit',
