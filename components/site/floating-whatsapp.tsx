@@ -2,13 +2,13 @@
 
 import { MessageCircle } from 'lucide-react'
 import { useLanguage } from '@/components/language-provider'
-import { WHATSAPP_URL } from '@/lib/translations'
+import { getWhatsAppUrl } from '@/lib/translations'
 
 export function FloatingWhatsApp() {
   const { t } = useLanguage()
   return (
     <a
-      href={WHATSAPP_URL}
+      href={getWhatsAppUrl()}
       target="_blank"
       rel="noopener noreferrer"
       aria-label={t.floating}

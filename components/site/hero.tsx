@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import { MapPin, MessageCircle, PhoneCall, ShieldCheck, Siren, House, Video } from 'lucide-react'
 import { useLanguage } from '@/components/language-provider'
-import { PHONE_DISPLAY, PHONE_TEL, WHATSAPP_URL } from '@/lib/translations'
+import { getWhatsAppUrl, PHONE_DISPLAY, PHONE_TEL } from '@/lib/translations'
 
 const badgeIcons = [Siren, House, Video]
 
@@ -40,7 +40,7 @@ export function Hero() {
               {t.hero.call}: {PHONE_DISPLAY}
             </a>
             <a
-              href={WHATSAPP_URL}
+              href={getWhatsAppUrl()}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 rounded-lg border border-accent/50 bg-accent/10 px-6 py-3.5 font-semibold text-accent transition-all hover:-translate-y-0.5 hover:bg-accent/20"

@@ -3,14 +3,14 @@
 import { ArrowRight, House, Store, Video } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { useLanguage } from '@/components/language-provider'
-import { WHATSAPP_URL } from '@/lib/translations'
+import { getWhatsAppUrl } from '@/lib/translations'
 import { SectionHeading } from './section-heading'
 
 const MAPS_URL = 'https://www.google.com/maps/search/?api=1&query=Airport+Road+Kashrote+Gilgit+Pakistan'
 const modeMeta = [
   { icon: Store, href: MAPS_URL },
-  { icon: House, href: WHATSAPP_URL },
-  { icon: Video, href: WHATSAPP_URL },
+  { icon: House, href: getWhatsAppUrl() },
+  { icon: Video, href: getWhatsAppUrl() },
 ]
 
 export function Modes() {
