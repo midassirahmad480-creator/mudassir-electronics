@@ -1,11 +1,11 @@
 export type Lang = 'en' | 'ur'
 
-export const PHONE_DISPLAY = '03469559167'
-export const PHONE_TEL = 'tel:+923469559167'
-export const WHATSAPP_NUMBER = '923469559167'
+export const PHONE_DISPLAY = '03151004567'
+export const PHONE_TEL = 'tel:+923151004567'
+export const WHATSAPP_NUMBER = '923151004567'
 
 export function getWhatsAppUrl(serviceName = '[Service Name]') {
-  const message = `AoA Mudassir Electronics! I am booking a service through your website.\n- Selected Service: ${serviceName}\n- Issue Details: [Type your problem here]\n- Location: Kashrote / Gilgit\nPlease confirm technician availability and estimated repair cost.\n\nAssalam-o-Alaikum Mudassir bhai! Main aap ki website se service book kar raha hoon.\n- Chuni hui Service: ${serviceName}\n- Masle ki Tafseel: [Apna masla yahan likhein]\n- Location: Kashrote / Gilgit\nBaraye meharbani technician ki timing aur kitna kharcha aayega bata dein. Shukriya!`
+  const message = `AoA Mudassir Electronics! I am booking a service through your website.\n- Selected Service: ${serviceName}\n- Issue Details: [Type your problem here]\n- Location: Kashrote / Gilgit\nPlease confirm technician availability and estimated repair cost.`
 
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
 }
