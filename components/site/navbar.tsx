@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Menu, PhoneCall, X, Zap } from 'lucide-react'
+import { CircuitBoard, Menu, PhoneCall, Wrench, X } from 'lucide-react'
 import { useLanguage } from '@/components/language-provider'
 import { LanguageToggle } from '@/components/language-toggle'
 import { PHONE_DISPLAY, PHONE_TEL } from '@/lib/translations'
@@ -14,11 +14,15 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-xl">
       <nav className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 md:px-6">
         <a href="#top" className="flex items-center gap-2.5">
-          <span className="flex size-10 items-center justify-center rounded-lg bg-primary shadow-[0_0_20px_-4px] shadow-accent">
-            <Zap className="size-5 text-primary-foreground" aria-hidden="true" />
+          <span className="relative flex size-10 items-center justify-center rounded-lg bg-primary shadow-[0_0_20px_-4px] shadow-accent">
+            <CircuitBoard className="size-6 text-primary-foreground" aria-hidden="true" />
+            <Wrench className="absolute size-3.5 -rotate-45 text-accent" aria-hidden="true" />
           </span>
           <span className="flex flex-col leading-tight">
-            <span className="font-heading text-sm font-bold text-foreground md:text-base">{t.nav.brand}</span>
+            <span className="font-heading text-sm font-bold md:text-base">
+              <span className="text-primary-foreground">Mudassir</span>{' '}
+              <span className="text-accent">Electronics</span>
+            </span>
             <span className="text-xs text-accent">{t.nav.brandSub}</span>
           </span>
         </a>
