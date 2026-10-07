@@ -10,7 +10,6 @@ export const metadata: Metadata = {
   title: 'Mudassir Electronics Repairing Shop | 24/7 Repair in Gilgit',
   description:
     '24/7 professional home appliances & electronics repairing in Gilgit. Shop visit, doorstep home service, or live video call guidance. Airport Road, Kashrote. Call 03469559167.',
-  generator: 'v0.app',
   keywords: [
     'electronics repair Gilgit',
     'washing machine repair Gilgit',
@@ -19,12 +18,9 @@ export const metadata: Metadata = {
     'home service Gilgit',
   ],
   icons: {
-    icon: [
-      { url: '/icon-light-32x32.png', media: '(prefers-color-scheme: light)' },
-      { url: '/icon-dark-32x32.png', media: '(prefers-color-scheme: dark)' },
-      { url: '/icon.svg', type: 'image/svg+xml' },
-    ],
-    apple: '/apple-icon.png',
+    icon: [{ url: '/favicon.svg', type: 'image/svg+xml' }],
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
   },
 }
 
