@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     'home service Gilgit',
   ],
   icons: {
-    icon: [{ url: '/favicon.svg', type: 'image/svg+xml' }],
-    shortcut: '/favicon.svg',
-    apple: '/favicon.svg',
+    icon: [{ url: '/mudassir-profile.jpg', type: 'image/jpeg' }],
+    shortcut: '/mudassir-profile.jpg',
+    apple: '/mudassir-profile.jpg',
   },
 }
 
